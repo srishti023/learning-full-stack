@@ -7,9 +7,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="piano"></div>
-    </main>
+    <div class="stage">
+    <div class="title">
+    <div class="controls"><div class="led" title="live"></div></div>
+    </div>
+    
+    
+    <div class="piano-wrap" tabindex="-1">
+    <div class="keyboard" role="application" aria-label="CSS piano">
+    <!-- White keys -->
+    <div class="white-keys" aria-hidden="false">
+    <!-- 21 white keys -->
+    <!-- We include tabindex so they can be focused (keyboard interactivity) -->
+    <!-- Labels are generic; change text in HTML if you want note names -->
+    <!-- Grouping visually in 3 octaves of 7 keys each -->
+    <!-- Octave 1 -->
+    <div class="white" tabindex="0"><div class="label name">C</div></div>
+    <div class="white" tabindex="0"><div class="label name">D</div></div>
+    <div class="white" tabindex="0"><div class="label name">E</div></div>
+    <div class="white" tabindex="0"><div class="label name">F</div></div>
+    <div class="white" tabindex="0"><div class="label name">G</div></div>
+    <div class="white" tabindex="0"><div class="label name">A</div></div>
+    <div class="white" tabindex="0"><div class="label name">B</div></div>
+    
+    
+    <!-- Octave 2 -->
+    <div class="white" tabindex="0"><div class="label name">C</div></div>
+    <div class="white" tabindex="0"><div class="label name">D</div></div>
+    <div class="white" tabindex="0"><div class="label name">E</div></div>
+    <div class="white" tabindex="0"><div class="label name">F</div></div>
+    <div class="white" tabindex="0"><div class="label name">G</div></div>
+    <div class="white" tabindex="0"><div class="label name">A</div></div>
+    <div class="white" tabindex="0"><div class="label name">B</div></div>
+    
+    
+    <!-- Octave 3 -->
+    <div class="white" tabindex="0"><div class="label name">C</div></div>
+    <div class="white" tabindex="0"><div class="label name">D</div></div>
+    <div class="white" tabindex="0"><div class="label name">E</div></div>
+    <div class="white" tabindex="0"><div class="label name">F</div></div>
+    <div class="white" tabindex="0"><div class="label name">G</div></div>
+    <div class="white" tabindex="0"><div class="label name">A</div></div>
+    <div class="white" tabindex="0"><div class="label name">B</div></div>
+    </div>
+    
+    
+    <!-- Black keys positioned absolutely over the white keys -->
+    <div class="black-keys" aria-hidden="false">
+    <!-- 15 black keys; left positions tuned to match 3 octaves of 7 white keys -->
+    
+    <div class="black" tabindex="0" style="left:7%"></div>
+    <div class="black" tabindex="0" style="left:12%"></div>
+    <div class="black" tabindex="0" style="left:22%"></div>
+    <div class="black" tabindex="0" style="left:27%"></div>
+    <div class="black" tabindex="0" style="left:32%"></div>
+    <div class="black" tabindex="0" style="left:42%"></div>
+    <div class="black" tabindex="0" style="left:47%"></div>
+    <div class="black" tabindex="0" style="left:52%"></div>
+    <div class="black" tabindex="0" style="left:62%"></div>
+    <div class="black" tabindex="0" style="left:68%"></div>
+    <div class="black" tabindex="0" style="left:73%"></div>
+    <div class="black" tabindex="0" style="left:83%"></div>
+    <div class="black" tabindex="0" style="left:88%"></div>
+    <div class="black" tabindex="0" style="left:93%"></div>
     <script src="script.js"></script>
-</body>
+    </body>
 </html>
