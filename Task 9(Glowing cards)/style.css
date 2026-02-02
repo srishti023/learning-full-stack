@@ -43,13 +43,19 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0 0 60px rgb(225, 20, 123);
+    /* box-shadow: 0 0 60px rgb(225, 20, 123); */
     border-radius: 15px;
     background: linear-gradient(black) padding-box,
                 conic-gradient(from var(--rotate), black,rgb(220, 20, 163),black) border-box;
     border: 5px solid rgba(255, 255, 255, 0);
-    animation: borderAnimate 10s;
+    animation: borderAnimate 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.box:hover{
+    animation-play-state: running;   
 }
 
 .box img{
