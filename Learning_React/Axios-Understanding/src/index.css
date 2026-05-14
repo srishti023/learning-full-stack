@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+button{
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+body{
+  padding: 20px;
+  background-color: black;
+}
+.user-card{
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+.all-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
