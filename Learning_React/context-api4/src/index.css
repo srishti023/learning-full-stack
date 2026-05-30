@@ -32,3 +32,27 @@ body{
   font-size: 20px;
   margin-top: 20px;
 }
+
+.home{
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home h1{
+  font-size: 100px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.cta{
+  padding: 20px 45px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 10px;
+  font-weight: 600;
+}

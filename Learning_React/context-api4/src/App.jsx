@@ -1,36 +1,21 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
+import Home from './Pages/Home'
+import Products from './Pages/Products'
+import ProductDetails from './Pages/ProductDetails'
+import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
 
-  const [productData, setProductData] = useState([])
-
-  const getData = async ()=>{
-    const response = await axios.get('https://fakestoreapi.com/products/')
-    setProductData(response.data)
-    
-  }
-  const firstData = async (id)=>{
-        const response = await axios.get(`https://fakestoreapi.com/products/${id}`)
-    console.log(response.data);
-  }
-
-  useEffect(function(){
-    getData()
-  },[])
+  
   return (
-    <div className='allProducts'>
-      {productData.map(function(elem,idx){
-        return <a className='product' key = {idx} href="">
-          <div>
-            <img src={elem.image} alt="" />
-            <h2>{elem.title}</h2>
-          </div>
-        </a>
-      })}
-      
-      
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/products" element={<Products />}/>
+        <Route path="/products/:id" element={<ProductDetails />}/>
+      </Routes>
     </div>
   )
 }
